@@ -1,0 +1,28 @@
+﻿<Window x:Class="Liblaly.View.UserManageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Liblaly.View"
+        mc:Ignorable="d"
+        Title="UserManageView" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="UserName" HorizontalAlignment="Left" Height="26" Margin="579,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="169"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="541,54,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Date" HorizontalAlignment="Left" Height="26" Margin="618,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <Label Content="Дата конца" HorizontalAlignment="Left" Margin="541,90,0,0" VerticalAlignment="Top"/>
+        <Button Content="Удолить" HorizontalAlignment="Left" Margin="493,236,0,0" VerticalAlignment="Top" Width="72" Click="DeleteUserClick"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="541,139,0,0" VerticalAlignment="Top" Width="207" Click="CreateUserClick"/>
+        <TextBlock HorizontalAlignment="Left" Margin="493,183,0,0" TextWrapping="Wrap" Text="Дата вводится в формате дд/мм/гггг. Все остальные форматы приводят к ошибке :с" VerticalAlignment="Top" Height="48" Width="268"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="68,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="168" x:Name="UserSeek"/>
+        <Label Content="Поиск" HorizontalAlignment="Left" Margin="19,26,0,0" VerticalAlignment="Top"/>
+        <Button Content="Искать" HorizontalAlignment="Left" Margin="257,29,0,0" VerticalAlignment="Top" Width="75" Click="SeekUser"/>
+        <ComboBox HorizontalAlignment="Left" Margin="19,90,0,0" VerticalAlignment="Top" Width="120" x:Name="Users" SelectionChanged="Users_SelectionChanged"/>
+        <TextBox x:Name="CurrentUserName" HorizontalAlignment="Left" Height="23" Margin="254,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="CurrentUserDead" HorizontalAlignment="Left" Height="23" Margin="275,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RefreshDate" HorizontalAlignment="Left" Height="23" Margin="254,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="198,105,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label Content="Дата конца" HorizontalAlignment="Left" Margin="198,141,0,0" VerticalAlignment="Top" Height="37"/>
+        <Button Content="Обновить" HorizontalAlignment="Left" Margin="161,183,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>

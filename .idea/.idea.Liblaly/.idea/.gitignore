@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.Liblaly.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\GrandArchTemplar\source\repos\Liblaly\.idea\.idea.Liblaly\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
