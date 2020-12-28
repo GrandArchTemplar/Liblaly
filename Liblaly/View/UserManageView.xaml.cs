@@ -13,6 +13,7 @@ namespace Liblaly.View {
         public event EventHandler<string> UserDestroyer = delegate { };
         public event EventHandler<(string, string)> UserImaginator = delegate { };
         public event EventHandler<string> TheChosenOne = delegate { };
+        public event EventHandler Fresh = delegate { };
         public UserManageView() {
             InitializeComponent();
         }
@@ -43,6 +44,10 @@ namespace Liblaly.View {
         public void DrawUser(User user) {
             CurrentUserName.Text = user.Name;
             CurrentUserDead.Text = new DateTime(user.Deadline).ToShortDateString();
+        }
+
+        private void Refresh(object sender, RoutedEventArgs e) {
+            Fresh(this, e);
         }
     }
 }

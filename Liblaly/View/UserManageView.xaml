@@ -20,9 +20,8 @@
         <ComboBox HorizontalAlignment="Left" Margin="19,90,0,0" VerticalAlignment="Top" Width="120" x:Name="Users" SelectionChanged="Users_SelectionChanged"/>
         <TextBox x:Name="CurrentUserName" HorizontalAlignment="Left" Height="23" Margin="254,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="CurrentUserDead" HorizontalAlignment="Left" Height="23" Margin="275,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="RefreshDate" HorizontalAlignment="Left" Height="23" Margin="254,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="198,105,0,0" VerticalAlignment="Top" Height="23"/>
         <Label Content="Дата конца" HorizontalAlignment="Left" Margin="198,141,0,0" VerticalAlignment="Top" Height="37"/>
-        <Button Content="Обновить" HorizontalAlignment="Left" Margin="161,183,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Обновить" HorizontalAlignment="Left" Margin="161,183,0,0" VerticalAlignment="Top" Width="75" Click="Refresh"/>
     </Grid>
 </Window>

@@ -82,7 +82,7 @@ namespace Liblaly {
         internal List<User> SeekByNameEUsers(string e) => EUsers.Where(x => x.Name.ToLower().Contains(e.ToLower())).ToList();
         internal List<User> SeekByNameAllUsers(string e) => AllUsers.Where(x => x.Name.ToLower().Contains(e.ToLower())).ToList();
         private void BookInvariant() => EBooks = AllBooks.Where(book => book.Count > 0).ToList();
-        private void UserInvariant(long dt) => EUsers = AllUsers.Where(user => user.Deadline > dt).ToList();
+        public void UserInvariant(long dt) => EUsers = AllUsers.Where(user => user.Deadline > dt).ToList();
         public void MutateBooks(Book book) {
             int c = 0;
             try {

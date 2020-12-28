@@ -17,11 +17,15 @@ namespace Liblaly.Presenter {
             _view.TheChosenOne += View_TheChosenOne;
             _view.UserImaginator += View_UserImaginator;
             _view.UserDestroyer += View_UserDestroyer;
+            _view.Fresh += View_Fresh;
             _model.ImaginateUser += Model_MutateUser;
             _model.DestroyUser += Model_DestroyUser;
         }
 
-        
+        private void View_Fresh(object sender, EventArgs e) {
+            _model.UserInvariant(DateTime.Now.AddDays(3).Ticks);
+        }
+
 
         private void Model_DestroyUser(object sender, (int err, List<User> users) e) {
             if (e.err == -1) {
